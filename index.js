@@ -1,8 +1,10 @@
-const R = require("ramda");
+var exports = module.exports = {
 
-const _linkTextFrom = ({ href, page }, callHistory) => page + " ";
+  pageReferenceTextFactory: function() {
 
-// eslint-disable-next-line
-module.exports = {
-  pageReferenceText: (href, page) => page + " ",
-}
+    return function(ref, pageNum) {
+      return "";
+    }
+
+  }  
+};
